@@ -9,26 +9,190 @@ nav>section {
     display: flex;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .logo-icon {
     height: 50px;
     width: 50px;
     border: 2px solid black;
-    background-image: url(https://pm1.narvii.com/6526/95bc1261f2630386a6ec17460f3725c6022b28ba_hq.jpg);
-    background-repeat: no-repeat;
+    background-image: url(https://th.bing.com/th?id=OIP.YqShiwzR804tw7G1x5QcrgAAAA&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2);
+    background-size: contain;
+    background-repeat: repeat;
+    border-radius: 50%;
+    align-items: center;
+    display: flex;
 }
 
+.logo-text {
+    font-size: 20px;
+    margin-right: 450px;
+    align-items: center;
+    display: flex;
+}
+    
 .nav-item {
-    border: 1px solid black;
     padding: 8px;
-    border-radius: 8px;
+    border-radius: 5px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
 }
 
-.banner-container{
-    height: 258px;
+.banner-container {
+    height: 400px;
     border: 1px solid black;
+    ;
 }
+
+.banner-img {
+    height: 400px;
+    width: 1175px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: none;
+}
+
 
 .facility-list {
     display: flex;
+    justify-content: center;
+    margin-top: 50px; 
     justify-content: space-around;
 }
+
+.container-facility {
+    text-align: center;
+    margin: 0 10px;
+}
+
+.box1 {
+    width: 140px;
+    height: 140px;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin: 0 auto;
+    background-image: url(https://fate-go.us/assets/img/pc/in_character/thumb/saber01.jpg);
+}
+
+.box2 {
+    width: 140px;
+    height: 140px;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin: 0 auto;
+    background-image: url(https://th.bing.com/th/id/OIP.b8ryZRKGBcSmUkoz_Z6XtAAAAA?pid=ImgDet&w=139&h=141&c=7&dpr=1,5);
+}
+
+.box3 {
+    width: 140px;
+    height: 140px;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin: 0 auto;
+    background-image: url(https://th.bing.com/th/id/OIP.u4qXn92xsAdZoY6iHIrapAAAAA?pid=ImgDet&w=150&h=150&c=7&dpr=1,5);
+}
+
+
+.caption {
+    margin-top: 10px;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.container {
+    display: flex;
+}
+
+.form-container {
+    flex: 1;
+    margin-right: 20px; 
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    width: 120px;
+    text-align: left;
+    margin-right: 10px;
+    padding: 0;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+input[type="text"] {
+    width: 220px;
+    padding: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 360px;
+}
+
+.text-box {
+    flex: 1;
+}
+
+textarea {
+    width: 320px;
+    height: 180px;
+    resize: none;
+    padding: 10px;
+    font-size: 14px;
+}
+
+#back-to-top-btn {
+    display: none; /* Tombol akan disembunyikan secara default */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#back-to-top-btn::before {
+    content: '\2191'; /* Unicode character code for up arrow */
+    margin-right: 5px;
+}
+

@@ -5,56 +5,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nasywan Portofolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     
 </head>
 
 <body>
     <nav>
         <div class="logo-icon"></div>
+        <span class="logo-text">Fate grand order</span>
 
         <section>
-        <a class="nav-item" href="">Home</a>
-        <a class="nav-item" href="">Our Facilities</a>
-        <a class="nav-item" href="">Messege Us</a>
+        <a class="nav-item" href="#home">Home</a>
+        <a class="nav-item" href="#facilities">Our Facilities</a>
+        <a class="nav-item" href="#messege">Messege Us</a>
         </section>
     </nav>
     <hr>
 
     <section>
         <!-- Home -->
-        <section id="Home">
+        <section id="home">
             <header>
-                <h1>Hi Nasywan, Welcome to</h1>
+                <h1>Hi Yama...Welcome to My website</h1>
             </header>
 
             <article>
-                <p>hello bro</p>
-                <div class="banner-container"></div>
+                <p>This is My mini project</p>
+                
+
+                <div class="banner-container">
+                <div class="banner-img" style="background-image: url(images/fate2.png);"></div>
+                <div class="banner-img" style="background-image: url(images/fate3.png);"></div>
+                <div class="banner-img" style="background-image: url(images/fate1.png);"></div>
+                </div>
+
             </article>
+            
     </section>
 
     <hr>
 
     <!-- Our Facilities -->
-    <section id="Facilities">
+    <section id="facilities">
         <header>
             <h1>Our Facilities</h1>
         </header>
 
-        <article class="facility-list">
-            <div>
-                <div style="width: 50px; height: 50px; border: 1px solid black;"></div>
+        <div class="facility-list">
+            <div class="container-facility">
+                <div class="box1"></div>
+                <h4 class="caption">Bertarung Bersama Karakter Favoritmu</h4>  
             </div>
-            <h5>Free Refill</h5>
-        </article>
+            <div class="container-facility">
+                <div class="box2"></div>
+                <h4 class="caption">Dapatkan Hadiah Event Yang Melimpah</h4>
+            </div>
+            <div class="container-facility">
+                <div class="box3"></div>
+                <h4 class="caption">Berbagai Senjata Menarik Ada Disini</h4>
+            </div>
+        </div>
+
     </section>
     
-    <hr>
     
+    <hr>
+   
     <!-- Message US -->
-    <section>
+    <section id="messege">
       <header>
+        
         <h1>Message US</h1>
       </header>
         
@@ -62,21 +82,46 @@
     
     <!-- Form -->
     <section>
-        <form>
-            <label>Name:</label>
-            <input type="text"><br>
-            <label style=" /* flex-flow: row; */ display: flex;
-">Tanggal Lahir:</label>
-            <input type="text">
-        </form >
+         <div class="container">
+        <div class="form-container">
+            <form>
+                <div class="form-group">
+                    <label for="input1">Nama:</label>
+                    <input type="text" id="input1" name="input1" required>
+                </div>
+                <div class="form-group">
+                    <label for="input2">Tanggal Lahir:</label>
+                    <input type="date" id="input2" name="input2" min="1000-01-01" max="9999-12-31" required>
+                </div>
+                <div class="form-group">
+                    <label>Jenis Kelamin:</label>
+                    <div class="checkbox-group">
+                        <label>
+                            <input type="checkbox" name="gender" value="male"> Pria
+                        </label>
+                        <label>
+                            <input type="checkbox" name="gender" value="female"> Wanita
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <button type="submit" style="color: blue;">Submit</button>
+                </div>
+            </form>
+        </div>
+        <div class="text-box">
+            <textarea rows="10" cols="30" placeholder="Tulis data Anda di sini..."></textarea>
+        </div>
+
+        <script src="js/script.js"></script>
+
+         </div>
         
-         <button style="
-    color: blue;
-">submit</button>
-        </article>
-        
-        
-    </section>
-    
+
+          </section>
+          
+          <button id="back-to-top-btn" onclick="scrollToTop()">Back to Top</button>
+          
+
 </body>
 </html>
